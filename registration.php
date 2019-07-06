@@ -12,6 +12,7 @@ try{
     if($password!=null){
         $stmt->execute();
         echo "User registration completed";
+        header("location: login.php");
     }
 }   catch(PDOException $pdo ){
     echo "unable";
@@ -62,6 +63,7 @@ try{
     </form>
     </div>
     <script src="js/bootstrap.min.js"></script>
+ <script src="js/bootstrap.min.js"></script>
 
 </body>
 </html>
